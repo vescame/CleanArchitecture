@@ -12,12 +12,10 @@
 ==== Study ====
 TODO - clean architecture book
 - [X] Part I : Introduction
-  - [X] What Is Design and Architecture
-    - [[what_is_design_and_architecture|Design and Architecture]]
-  - [X] A Tale of Two Values
-    - [[a_tale_of_two_values|The Values]]
+  - [X] [[what_is_design_and_architecture|Design and Architecture]]
+  - [X] [[a_tale_of_two_values|A Tale of Two  Values]]
 - [ ] Part II - Starting with the Bricks: Programming Paradigms
-  - [ ] Chapter 3 - Paradigm Overview
+  - [ ] Chapter 3 - [[paradigm_overview|Paradigm Overview]]
   - [ ] Chapter 4 - Structure Programming
   - [ ] Chapter 5 - Object-Oriented Programming
   - [ ] Chapter 6 - Functional Programming

@@ -1,0 +1,30 @@
+== Paradigm Overview ==
+
+- Structured Programming:
+  - goto jumps is bad for the program structure, so conditionals and loops where introduced
+
+> Structured Programming imposes discipline on direct transfer of control
+
+- Object Oriented Programming:
+  - stack calls could be moved to heap memory, allowing function declared variable to exists much more after the function's returnal
+    - function turned out to be a class constructor
+    - local variables began to belong to an instance
+    - and nested functions started to be methods
+  - those drove programming to a new discovery: polimorphism
+
+> OOP imposes discipline on indirect transfer of control
+
+- Functional Programming:
+  - based on 1-calculus and LISP came over.
+  - immutability as it main purpose, so functional languages doesn't have assignment statement. althought it, in fact, must have strictly disciplined ways to alter variables.
+
+> Functional Programming imposes discipline upon assignment
+
+== Conclusion
+ - those are the three existing Paradigms ever since programming was developed/discovered. this is likely to continue as is.
+ - what do they have with architecture? everything. they impose some discipline over development.
+   - the big concerns about architecture are:
+     - function
+     - separation components
+     - data management
+
