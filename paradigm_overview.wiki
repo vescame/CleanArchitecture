@@ -1,30 +1,32 @@
 == Paradigm Overview ==
 
-- Structured Programming:
-  - goto jumps is bad for the program structure, so conditionals and loops where introduced
+=== Programação Estruturada ===
+  - o uso de _goto_ é ruim para a estrutura do programa, então condicionais e iterações foram introduzidas
 
-> Structured Programming imposes discipline on direct transfer of control
+> Programação Estruturada impõe disciplina na transferência direto de controle
 
-- Object Oriented Programming:
-  - stack calls could be moved to heap memory, allowing function declared variable to exists much more after the function's returnal
-    - function turned out to be a class constructor
-    - local variables began to belong to an instance
-    - and nested functions started to be methods
-  - those drove programming to a new discovery: polimorphism
+=== Programação Orientada a Objetos ===
+  - chamadas em pilha foram movidas para a memória _heap_, permitindo que variáveis declaradas no escopo de uma função permaneçam
+    muito após o retorno da função
+    - funções passaram a ser também um construtor de classe
+    - variáveis locais passaram a pertencem a instância
+    - funções aninhadas passaram a ser métodos
+  - esses comportamentos levaram a progração à uma nova descoberta: o polimorfismo
 
-> OOP imposes discipline on indirect transfer of control
+> POO impõe disciplina na transferência indireta de controle
 
-- Functional Programming:
-  - based on 1-calculus and LISP came over.
-  - immutability as it main purpose, so functional languages doesn't have assignment statement. althought it, in fact, must have strictly disciplined ways to alter variables.
+=== Programação Funcional ===
+  - baseada em cálculo 1 e a linguagem LISP surgiu
+  - imutabilidade era o principal objetivo, então linguagens funcionais não teriam declarações de atribuições. ainda que, de fato, devem haver modos
+    estritamente disciplinados de alterar variáveis
 
-> Functional Programming imposes discipline upon assignment
+> Programming Funcional impõe disciplina na atribuição
 
-== Conclusion
- - those are the three existing Paradigms ever since programming was developed/discovered. this is likely to continue as is.
- - what do they have with architecture? everything. they impose some discipline over development.
-   - the big concerns about architecture are:
-     - function
-     - separation components
-     - data management
+== Conclusão ==
+ - estes são os 3 paradigmas existentes desde quando surgiu o desevolvimento/programação. provavelmente continuará sendo assim. 
+ - o que eles têm a ver com arquitetura? tudo. eles impõem disciplina no desenvolvimento.
+   - as mais importantes características da arquitetura são:  
+     - função
+     - componentização
+     - gerenciamento de dados
 
