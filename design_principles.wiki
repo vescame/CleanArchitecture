@@ -1,0 +1,13 @@
+== SOLID ==
+
+  - SOLID se refere a forma de organizar funções e estruturas a nível médio (diz-se dessa maneira referindo-se aos
+    programadores que estão trabalhando à nível do módulo); e seus objetivos quanto aos fontes são:
+    - tolerem mudanças
+    - sejam fáceis de entender
+    - sejam a base de componentes que possam ser usados em muitos sistemas  de software
+  - SRP:
+  - OCP:
+  - LSP:
+  - ISP:
+  - DIP:
+
