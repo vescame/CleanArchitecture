@@ -1,4 +1,4 @@
-== Paradigm Overview ==
+== Panorama do Paradigma ==
 
 === Programação Estruturada ===
   - o uso de _goto_ é ruim para a estrutura do programa, então condicionais e iterações foram introduzidas

@@ -1,4 +1,4 @@
-== Os Valores ==
+== Um Conto de Dois Valores ==
  - o primeiro valor do software é seu comportamento
  - o segundo valor do software é sua arquitetura - diz respeito a "soft" e "ware" como produto fácil de alterar
 

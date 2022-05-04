@@ -1,4 +1,4 @@
-== Surgimento ==
+== Programação Estruturada ==
   Com a necessidade de reduzir a dificuldade de desenvolver programas de qualquer grau de complexidade,
   Dijkstra nota que comprovações do código era uma boa abordagem para não submeter códigos a compilações
   longas (horas, dias) e ao final ter exceções.
