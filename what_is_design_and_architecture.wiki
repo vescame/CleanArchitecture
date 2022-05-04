@@ -1,4 +1,5 @@
 == O Que é Design e Arquitetura ==
+
   design e arquitetura são a mesma coisa, em que design se trata de algo de "mais baixo nível" e arquitetura "mais alto nível".
   design como estruturas de decisão e arquitetura como a forma com a qual o sistema se comunica.
   estudo de caso:

@@ -19,7 +19,7 @@ TODO - clean architecture book
   - [ ] Chapter 4 - [[structured_programming|Structure Programming]]
   - [ ] Chapter 5 - [[object_oriented_programming|Object-Oriented Programming]]
   - [ ] Chapter 6 - [[functional_programming|Functional Programming]]
-- [ ] Part III - Design Principles
+- [ ] Part III - [[design_principles|Design Principles]]
   - [ ] Chapter 07 - SRP: The Single Responsibility Principle
   - [ ] Chapter 08 - OCP: The Open-Closed Principle
   - [ ] Chapter 09 - LSP: The Liskov Substitution Principle
