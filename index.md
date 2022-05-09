@@ -13,14 +13,14 @@
 TODO - clean architecture book
 - [X] Part I : Introduction
   - [X] [Design and Architecture](/what_is_design_and_architecture.md)
-  - [X] [[a_tale_of_two_values|A Tale of Two Values]]
+  - [X] [A Tale of Two Values](/a_tale_of_two_values.md)
 - [ ] Part II - Starting with the Bricks: Programming Paradigms
-  - [ ] Chapter 3 - [[paradigm_overview|Paradigm Overview]]
-  - [ ] Chapter 4 - [[structured_programming|Structure Programming]]
-  - [ ] Chapter 5 - [[object_oriented_programming|Object-Oriented Programming]]
-  - [ ] Chapter 6 - [[functional_programming|Functional Programming]]
-- [ ] Part III - [[design_principles|Design Principles]]
-  - [ ] Chapter 07 - [[design_principles/SRP|SRP: The Single Responsibility Principle]]
+  - [ ] Chapter 3 - [Paradigm Overview](/paradigm_overview.md)
+  - [ ] Chapter 4 - [Structure Programming](/structured_programming.md)
+  - [ ] Chapter 5 - [Object-Oriented Programming](/object_oriented_programming.md)
+  - [ ] Chapter 6 - [Functional Programming](/functional_programming.md)
+- [ ] Part III - [Design Principles](/design_principles.md)
+  - [ ] Chapter 07 - [SRP: The Single Responsibility Principle](/design_principles/SRP.md)
   - [ ] Chapter 08 - OCP: The Open-Closed Principle
   - [ ] Chapter 09 - LSP: The Liskov Substitution Principle
   - [ ] Chapter 10 - ISP: The Interface Segregation Principle
