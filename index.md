@@ -12,7 +12,7 @@
 ### Study
 TODO - clean architecture book
 - [X] Part I : Introduction
-  - [X] [Design and Architecture](/what_is_design_and_architecture)
+  - [X] [Design and Architecture](/what_is_design_and_architecture.md)
   - [X] [[a_tale_of_two_values|A Tale of Two Values]]
 - [ ] Part II - Starting with the Bricks: Programming Paradigms
   - [ ] Chapter 3 - [[paradigm_overview|Paradigm Overview]]
