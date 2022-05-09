@@ -1,18 +1,18 @@
-= Summary =
-1. [[#Summary-Datasources|Datasources]]
-2. [[#Summary-Datasources-Study|Study]]
-3. [[#Summary-Help|Help]]
-=== Datasources ===
+# Summary
+1. [Datasources](#datasources)
+2. [Study](#study)
+3. [Help](#help)
+## Datasources
 - TODO
   - [ ] - criar IAC para ter acesso ao RDS do transaction-parties https://picpay.atlassian.net/wiki/spaces/COBK/pages/2504786139/Cria+o+de+Acessos+RDS+via+IAC
 - TODO - cards-repository-openbanking
 - TODO - cards-openbanking
 - [ ] - segregar testes unitários da classe ImportTransactionHistoryOnNewConsentTest entre ImportTransactionHistoryOnNewConsentTest e GetAllTransactionsOnNewConsentTest
 
-==== Study ====
+### Study
 TODO - clean architecture book
 - [X] Part I : Introduction
-  - [X] [[what_is_design_and_architecture|Design and Architecture]]
+  - [X] [Design and Architecture](/what_is_design_and_architecture)
   - [X] [[a_tale_of_two_values|A Tale of Two Values]]
 - [ ] Part II - Starting with the Bricks: Programming Paradigms
   - [ ] Chapter 3 - [[paradigm_overview|Paradigm Overview]]
@@ -30,20 +30,18 @@ TODO - clean architecture book
   - [ ] Chapter 13 - Component Cohesion
   - [ ] Chapter 14 - Component Coupling
 
-=== Help ===
-{{{
-| command       | description                                 |
-|---------------|---------------------------------------------|
-| <Leader>ww    | Open default wiki index file                |
-| <Leader>wt    | Open default wiki index file in a new tab.  |
-| <Leader>ws    | Select and open wiki index file.            |
-| <Leader>wd    | Delete wiki file you are in.                |
-| <Leader>wr    | Rename wiki file you are in.                |
-| <Enter>       | Follow/Create wiki link.                    |
-| <Shift-Enter> | Split and follow/create wiki link.          |
-| <Ctrl-Enter>  | Vertical split and follow/create wiki link. |
-| <Backspace>   | Go back to parent(previous) wiki link.      |
-| <Tab>         | Find next wiki link.                        |
-| <Shift-Tab>   | Find previous wiki link.                    |
-}}}
+## Help
+| command         | description                                 |
+|-----------------|---------------------------------------------|
+| \<Leader\>ww    | Open default wiki index file                |
+| \<Leader\>wt    | Open default wiki index file in a new tab.  |
+| \<Leader\>ws    | Select and open wiki index file.            |
+| \<Leader\>wd    | Delete wiki file you are in.                |
+| \<Leader\>wr    | Rename wiki file you are in.                |
+| \<Enter\>       | Follow/Create wiki link.                    |
+| \<Shift-Enter\> | Split and follow/create wiki link.          |
+| \<Ctrl-Enter\>  | Vertical split and follow/create wiki link. |
+| \<Backspace\>   | Go back to parent(previous) wiki link.      |
+| \<Tab\>         | Find next wiki link.                        |
+| \<Shift-Tab\>   | Find previous wiki link.                    |
 
