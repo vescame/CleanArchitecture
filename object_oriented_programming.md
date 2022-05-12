@@ -1,7 +1,7 @@
-== Programação Orientada a Objetos ==
+## Programação Orientada a Objetos
   - herança, polimorfismo e encapsulamento são as palavras que geralmente são associadas e justificam o uso de POO
-    - encapsulamento é uma presunção em OO, pq os desenvolvedores conhecem classes e seus membros. assume-se que são suficientemente
-      comportados para utilizá-las. em C o encapsulamento era tão bom quanto a de linguagens OO.
+    - encapsulamento em OO não é tão bom, os desenvolvedores conhecem classes e seus membros. porém assume-se que são
+      suficientemente comportados para utilizá-las. em C o encapsulamento era tão bom quanto a de linguagens OO.
 
     - herança também não é o bastante para embasar o uso de OO. em C ela já existia, apesar de muito manual e dificil de se utilizar
       no caso de múltiplas descedências
