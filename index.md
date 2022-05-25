@@ -1,15 +1,4 @@
 # Summary
-1. [Datasources](#datasources)
-2. [Study](#study)
-3. [Help](#help)
-## Datasources
-- TODO
-  - [ ] - criar IAC para ter acesso ao RDS do transaction-parties https://picpay.atlassian.net/wiki/spaces/COBK/pages/2504786139/Cria+o+de+Acessos+RDS+via+IAC
-- TODO - cards-repository-openbanking
-- TODO - cards-openbanking
-- [ ] - segregar testes unitários da classe ImportTransactionHistoryOnNewConsentTest entre ImportTransactionHistoryOnNewConsentTest e GetAllTransactionsOnNewConsentTest
-
-### Study
 TODO - clean architecture book
 - [X] Part I : Introduction
   - [X] [Design and Architecture](/what_is_design_and_architecture.md)
@@ -29,19 +18,4 @@ TODO - clean architecture book
   - [ ] Chapter 12 - Components
   - [ ] Chapter 13 - Component Cohesion
   - [ ] Chapter 14 - Component Coupling
-
-## Help
-| command         | description                                 |
-|-----------------|---------------------------------------------|
-| \<Leader\>ww    | Open default wiki index file                |
-| \<Leader\>wt    | Open default wiki index file in a new tab.  |
-| \<Leader\>ws    | Select and open wiki index file.            |
-| \<Leader\>wd    | Delete wiki file you are in.                |
-| \<Leader\>wr    | Rename wiki file you are in.                |
-| \<Enter\>       | Follow/Create wiki link.                    |
-| \<Shift-Enter\> | Split and follow/create wiki link.          |
-| \<Ctrl-Enter\>  | Vertical split and follow/create wiki link. |
-| \<Backspace\>   | Go back to parent(previous) wiki link.      |
-| \<Tab\>         | Find next wiki link.                        |
-| \<Shift-Tab\>   | Find previous wiki link.                    |
 
