@@ -17,7 +17,7 @@
   mesma promove as classes que as referenciam. isso inclusive desacopla possíveis dependências
   transitivas. que ferem o princípio geral de que entidades não dependem do que não usam diretamente.
 
-![figure 8.2 page 72](/design_principles/OCP_figure_8_2.png)
+![figure 8.2 page 72](./OCP_figure_8_2.png)
 
   - em termos de "controle direcional" a interface *FinancialDataGateway* existe para inverter a dependência
   entre *FinancialReportGenerator* e *FinancialDataMapper*, onde a primeira referencia a interface e a
