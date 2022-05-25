@@ -23,14 +23,14 @@
  com N funções em N classes com 1 função. reunindo o uso das suas funções em 1 classe, por exemplo
  a responsável por agregar os resultados.
 
-![figure 7.3 page 65](./SRP_figure_7_3.png)
+![figure 7.3 page 66](./SRP_figure_7_3.png)
   - essa solução traz um problema que é a adição de 3 novas classes para rastrear
 
   - outra opção é agregar a um facade
-![figure 7.4 page 65](./SRP_figure_7_4.png)
+![figure 7.4 page 66](./SRP_figure_7_4.png)
 
   - contudo ainda há a opção de aproximar tudo às regras de negócio
-![figure 7.5 page 66](./SRP_figure_7_5.png)
+![figure 7.5 page 67](./SRP_figure_7_5.png)
 
 
 ## Conclusão
