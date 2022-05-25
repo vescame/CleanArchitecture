@@ -10,7 +10,7 @@ TODO - clean architecture book
   - [ ] Chapter 6 - [Functional Programming](/functional_programming.md)
 - [ ] Part III - [Design Principles](/design_principles/index.md)
   - [ ] Chapter 07 - [SRP: The Single Responsibility Principle](/design_principles/SRP.md)
-  - [ ] Chapter 08 - OCP: The Open-Closed Principle
+  - [ ] Chapter 08 - [OCP: The Open-Closed Principle](/design_principles/OCP.md)
   - [ ] Chapter 09 - LSP: The Liskov Substitution Principle
   - [ ] Chapter 10 - ISP: The Interface Segregation Principle
   - [ ] Chapter 11 - DIP: The Dependency Inversion Principle
