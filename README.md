@@ -13,7 +13,7 @@
 - [ ] Part III - [Design Principles](/design_principles/index.md)
   - [X] Chapter 07 - [SRP: The Single Responsibility Principle](/design_principles/SRP.md)
   - [X] Chapter 08 - [OCP: The Open-Closed Principle](/design_principles/OCP.md)
-  - [ ] Chapter 09 - LSP: The Liskov Substitution Principle
+  - [X] Chapter 09 - [LSP: The Liskov Substitution Principle](/design_principles/LSP.md)
   - [ ] Chapter 10 - ISP: The Interface Segregation Principle
   - [ ] Chapter 11 - DIP: The Dependency Inversion Principle
 - [ ] Part IV - Component Principles
