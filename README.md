@@ -15,7 +15,7 @@
   - [X] Chapter 08 - [OCP: The Open-Closed Principle](/design_principles/OCP.md)
   - [X] Chapter 09 - [LSP: The Liskov Substitution Principle](/design_principles/LSP.md)
   - [X] Chapter 10 - [ISP: The Interface Segregation Principle](/design_principles/ISP.md)
-  - [ ] Chapter 11 - DIP: The Dependency Inversion Principle
+  - [X] Chapter 11 - [DIP: The Dependency Inversion Principle](/design_principles/DIP.md)
 - [ ] Part IV - Component Principles
   - [ ] Chapter 12 - Components
   - [ ] Chapter 13 - Component Cohesion
