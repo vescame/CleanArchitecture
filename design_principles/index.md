@@ -11,17 +11,17 @@ termos de desenvolvimento são:
     stakeholders interessados em funcionalidades similares devem ser segregados, por exemplo)
       
 ### OCP (Open/Closed Pattern):
-  - organização que visa a facilidade de mudanças por meio de implementaçõesa (adições) e não alterações do já
+  - organização que visa a facilidade de mudanças por meio de implementações que acrescem e não alterações do
     código já existente
-      
+
 ### LSP (Liskov Substitution Principle):
   - organização que visa substituir partes do código de forma simplificada, por meio de "contratos" pré-estabelecidos
     tornando as implementações intercambiáveis (utilizando interfaces, por exemplo)
-      
+
 ### ISP (Interface Segregation Principle):
   - organização que orienta que o uma implementação não pode depender de uma função que não usa, se isso ocorre,
     há um erro de segregação
-      
+
 ### DIP (Dependency Inversion Principle):
   - organização que propõe que um detalhe de alto nível não deve depender de detalhes de baixo nível
 
