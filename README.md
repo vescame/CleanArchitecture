@@ -10,7 +10,7 @@
   - [X] Chapter 4 - [Structure Programming](/structured_programming.md)
   - [X] Chapter 5 - [Object-Oriented Programming](/object_oriented_programming.md)
   - [X] Chapter 6 - [Functional Programming](/functional_programming.md)
-- [ ] Part III - [Design Principles](/design_principles/index.md)
+- [X] Part III - [Design Principles](/design_principles/index.md)
   - [X] Chapter 07 - [SRP: The Single Responsibility Principle](/design_principles/SRP.md)
   - [X] Chapter 08 - [OCP: The Open-Closed Principle](/design_principles/OCP.md)
   - [X] Chapter 09 - [LSP: The Liskov Substitution Principle](/design_principles/LSP.md)
