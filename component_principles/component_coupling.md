@@ -75,31 +75,82 @@ lógico, assim como no anterior
   - Y é instável e depende de outros 3 componentes; Y não é responsável por nenhum
   outro componente, é dependente e também pode sofrer com mudanças vindas de
   fontes externas.
+  ![figure 14.6 page 109](./component_coupling_figure_14_6.png)
 
 **Métricas de Estabilidade**
+  - podemos calcular a partir do número de dependências que entram e saem do
+  componente.
+  - fan-in: dependências entrando
+  - fan-out: dependências saindo
+  - *I* - Instabilidade: fan-in + fan-out. 0 estabilidade máxima e 1 instabilidade
+  máxima
+  - SDP diz que a métrica *I* de um componente deve ser maior que a métrica *I* dos
+  componentes que ele depende
 
 **Nem Todos os Componentes Devem ser Estáveis**
+  - não há como todos os componentes serem estáveis num sistema. idealmente os
+  mutáveis estarão no topo, dependendo dos estáveis logo abaixo.
+  - para solucionar uma violação SDP na qual uma classe estável depende de uma
+  classe de um component mutável, aplicamos DIP. colocamos uma interface entre
+  as duas classes e extraia para essa interface todos os métodos em que a
+  classe estável precisa usar.
+  ![figure 14.11 page 109](./component_coupling_figure_14_11.png)
 
 **Componentes Abstratos**
+  - extrair de uma classe concreta alguns métodos e transformar num componente é
+  algo que parece absurdo. mas é uma tática para linguagens estaticamente
+  tipadas.
 
 ### O Princípio de Abstrações Estáveis
 > Um componente deve ser tão abstrato quanto estável
 
 **Onde Devemos Colocar as Políticas de Alto Nível**
+  - políticas de alto nível devem ser aplicadas pensando em OCP, em que classes são
+  flexíveis o bastante para serem extendidas sem modificações. classes abstratas
+  são o ideal para isso.
 
 **Apresentando o Princípio de Abstrações Estáveis**
+  - para SAP um componente estável deve ser abstrato para que sua estabilidade
+  não impeça sua extensão. já um instável deve ser concreto.
+  - portanto, um componente estável deve consistir de interfaces e classes
+  abstratas. estes mesmos componentes são extensíveis, flexíveis e não
+  restringem demais a arquitetura.
 
 **Medindo a Abstração**
+  - sua métrica é a razão entre interfaces e classes abstratas de um componente
+  e o número total de classes desse mesmo.
+  - *Nc*: número de classes
+  - *Na*: número de classes abstratas
+  - *A*: nível de abstração. *A* = *Na* / *Nc*. 0 indica que não há classes
+  abstratas e 1 que contém apenas esse tipo de classe.
 
 **A Sequência Principal**
+  - e distribuimos os componentes no gráfico
+
+  ![figure 14.12 page 128](./component_coupling_figure_14_12.png)
+  ![figure 14.13 page 128](./component_coupling_figure_14_13.png)
 
 **A Zona da Dor**
+  - um exemplo comum de classes que ficam na zona da dor são os esquemas de
+  bases de dados. são voláteis, concretos e alvos frequentes de dependências.
 
 **A Zona da Inutilidade**
+  - um exemplo são restos de classes abstratas nunca implementados. são inúteis
+  e eventualmente os encontramos na base de código.
 
 **Evitando  as Zonas de Exclusão**
+  - é extremamente desejável que os componentes estejam próximos as extremidades
+  da *sequência principal*. a linha que cruza de (1,0) a (0,1)
 
 **Distância da Sequência Principal**
+  - para determinar a distância do componente das duas zonas indesejadas,
+  calculamos *D*
+  - *D*: *A* + *I* - 1. 1 indica que está distânte da sequência principal e 0
+  indica que está diretamente na sequência principal.
+  ![figure 14.14 page 131](./component_coupling_figure_14_14.png)
 
 ## Conclusão
+  - as métricas de gestão de dependências descritas no capítulo estão em
+  conformidade com o que Uncle Bob considera "bom". não são perfeitas e tampouco
+  imutáveis. mas refletem a sua experiência com dependências boas ou ruins.
 
