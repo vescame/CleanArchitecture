@@ -68,13 +68,13 @@ lógico, assim como no anterior
   difíceis de alterar não sejam dependentes dos fáceis de alterar.
 
 **Estabilidade**
-- X é estável e tem 3 boas razões para não mudar; X é responsável por outros 3
-componentes e também independente pois não há classe em que X dependa
-![figure 14.5 page 109](./component_coupling_figure_14_5.png)
+  - X é estável e tem 3 boas razões para não mudar; X é responsável por outros 3
+  componentes e também independente pois não há classe em que X dependa
+  ![figure 14.5 page 109](./component_coupling_figure_14_5.png)
 
-- Y é instável e depende de outros 3 componentes; Y não é responsável por nenhum
-outro componente, é dependente e também pode sofrer com mudanças vindas de
-fontes externas.
+  - Y é instável e depende de outros 3 componentes; Y não é responsável por nenhum
+  outro componente, é dependente e também pode sofrer com mudanças vindas de
+  fontes externas.
 
 **Métricas de Estabilidade**
 
