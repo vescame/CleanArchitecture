@@ -16,7 +16,7 @@
   - [X] Chapter 09 - [LSP: The Liskov Substitution Principle](/design_principles/LSP.md)
   - [X] Chapter 10 - [ISP: The Interface Segregation Principle](/design_principles/ISP.md)
   - [X] Chapter 11 - [DIP: The Dependency Inversion Principle](/design_principles/DIP.md)
-- [ ] Part IV - [Component Principles](/component_principles/README.md)
+- [X] Part IV - [Component Principles](/component_principles/README.md)
   - [X] Chapter 12 - [Components](/component_principles/components.md)
   - [X] Chapter 13 - [Component Cohesion](/component_principles/component_cohesion.md)
   - [X] Chapter 14 - [Component Coupling](/component_principles/component_coupling.md)
