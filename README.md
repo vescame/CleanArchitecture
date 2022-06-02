@@ -18,6 +18,6 @@
   - [X] Chapter 11 - [DIP: The Dependency Inversion Principle](/design_principles/DIP.md)
 - [ ] Part IV - [Component Principles](/component_principles/README.md)
   - [X] Chapter 12 - [Components](/component_principles/components.md)
-  - [] Chapter 13 - [Component Cohesion](/component_principles/component_cohesion.md)
+  - [X] Chapter 13 - [Component Cohesion](/component_principles/component_cohesion.md)
   - [ ] Chapter 14 - [Component Coupling](/component_principles/component_coupling.md)
 
