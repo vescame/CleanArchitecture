@@ -51,10 +51,30 @@ lógico, assim como no anterior
   do projeto e dos desenvolvedores dirá se a melhor abordagem é a opção 1 ou 2.
 
 ### Design de Cima para Baixo
+  - o diagrama de estrutura de dependência de componentes não deve ser uma das primeiras
+  coisas a serem feitas num projeto. apesar disso parecer contraintuitivo.
+  - eles são mapas para facilitar o build e manutenção da aplicação. nessa
+  estrutura a principal preocupação é com o isolamento e volatilidade. não
+  queremos que componentes que mudam com frequencia afetem componentes estáveis.
+  - esse diagrama não deve ser criado no início pois não sabemos das
+  interdependências entre classes/módulos e não haveria como prever tudo isso no
+  início. seria um fracasso.
 
 **O Princípio das Dependências Estáveis**
+> dependa da direção da estabilidade
+  - um componente estável não deve ser dependente de um volátil. caso contrário,
+  o componente volátil será difícil de mudar.
+  - ao aplicar o SDP (Stable Dependency Principle) garantimos que módulos
+  difíceis de alterar não sejam dependentes dos fáceis de alterar.
 
 **Estabilidade**
+- X é estável e tem 3 boas razões para não mudar; X é responsável por outros 3
+componentes e também independente pois não há classe em que X dependa
+![figure 14.5 page 109](./component_coupling_figure_14_5.png)
+
+- Y é instável e depende de outros 3 componentes; Y não é responsável por nenhum
+outro componente, é dependente e também pode sofrer com mudanças vindas de
+fontes externas.
 
 **Métricas de Estabilidade**
 
