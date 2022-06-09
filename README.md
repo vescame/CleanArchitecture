@@ -20,4 +20,6 @@
   - [X] Chapter 12 - [Components](/component_principles/components.md)
   - [X] Chapter 13 - [Component Cohesion](/component_principles/component_cohesion.md)
   - [X] Chapter 14 - [Component Coupling](/component_principles/component_coupling.md)
+- [X] Part V - Architecture
+  - [X] Chapter 17 - [Boundaries: Drawing Lines](/architecture/boundaries_drawing_lines.md)
 
