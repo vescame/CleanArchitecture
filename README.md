@@ -21,5 +21,5 @@
   - [X] Chapter 13 - [Component Cohesion](/component_principles/component_cohesion.md)
   - [X] Chapter 14 - [Component Coupling](/component_principles/component_coupling.md)
 - [X] Part V - Architecture
+  - [X] Chapter 15 - [What is Architecture](/architecture/what_is_architecture.md)
   - [X] Chapter 16 - [Independence](/architecture/independence.md)
-
