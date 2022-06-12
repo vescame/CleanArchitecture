@@ -24,4 +24,5 @@
   - [X] Chapter 15 - [What is Architecture](/architecture/what_is_architecture.md)
   - [X] Chapter 16 - [Independence](/architecture/independence.md)
   - [X] Chapter 17 - [Boundaries: Drawing Lines](/architecture/boundaries_drawing_lines.md)
+  - [X] Chapter 18 - [Boundary Anatomy](/architecture/boundary_anatomy.md)
 
