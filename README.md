@@ -26,4 +26,5 @@
   - [X] Chapter 17 - [Boundaries: Drawing Lines](architecture/boundaries_drawing_lines.md)
   - [X] Chapter 18 - [Boundary Anatomy](architecture/boundary_anatomy.md)
   - [X] Chapter 19 - [Policy and Level](architecture/policy_and_level.md)
+  - [X] Chapter 23 - [Presenters and Humble Objects](architecture/presenters_and_humble_objects.md)
 
