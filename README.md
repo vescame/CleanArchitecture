@@ -32,3 +32,4 @@
   - [X] Chapter 23 - [Presenters and Humble Objects](architecture/presenters_and_humble_objects.md)
   - [X] Chapter 24 - [Partial Boundaries](architecture/partial_boundaries.md)
   - [X] Chapter 25 - [Layers and Boundaries](architecture/layers_and_boundaries.md)
+  - [X] Chapter 26 - [The Main Component](architecture/the_main_component.md)
