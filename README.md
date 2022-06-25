@@ -30,3 +30,4 @@
   - [X] Chapter 21 - [Screaming Architecture](architecture/screaming_architecture.md)
   - [X] Chapter 22 - [The Clean Architecture](architecture/the_clean_architecture.md)
   - [X] Chapter 23 - [Presenters and Humble Objects](architecture/presenters_and_humble_objects.md)
+  - [X] Chapter 24 - [Partial Boundaries](architecture/partial_boundaries.md)
