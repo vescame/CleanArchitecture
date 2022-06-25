@@ -28,3 +28,4 @@
   - [X] Chapter 19 - [Policy and Level](architecture/policy_and_level.md)
   - [X] Chapter 20 - [Business Rules](architecture/business_rules.md)
   - [X] Chapter 21 - [Screaming Architecture](architecture/screaming_architecture.md)
+  - [X] Chapter 22 - [The Clean Architecture](architecture/the_clean_architecture.md)
