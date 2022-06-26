@@ -58,7 +58,7 @@ condicional. portanto, tudo que for adicionado não precisará passar por uma
 
 ### Preocupações Transversais
 - para lidar com as preocupações transversais, como a vista na seção [O
-Problema do Gato](#o_problema_do_gato), podemos utilizar uma arquitetura de
+Problema do Gato](#o-problema-do-gato), podemos utilizar uma arquitetura de
 componentes em conformidade com a Regra de Dependência, conforme o diagrama da
 figura 27.7
 
