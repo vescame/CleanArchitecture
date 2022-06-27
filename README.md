@@ -34,4 +34,5 @@
   - [X] Chapter 25 - [Layers and Boundaries](architecture/layers_and_boundaries.md)
   - [X] Chapter 26 - [The Main Component](architecture/the_main_component.md)
   - [X] Chapter 27 - [Services: Great and Small](architecture/services_great_and_small.md)
+  - [X] Chapter 28 - [The Test Boundary](architecture/the_test_boundary.md)
 
