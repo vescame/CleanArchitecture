@@ -33,5 +33,7 @@
   - [X] Chapter 24 - [Partial Boundaries](architecture/partial_boundaries.md)
   - [X] Chapter 25 - [Layers and Boundaries](architecture/layers_and_boundaries.md)
   - [X] Chapter 26 - [The Main Component](architecture/the_main_component.md)
+  - [X] Chapter 27 - [Services: Great and Small](architecture/services_great_and_small.md)
+  - [X] Chapter 28 - [The Test Boundary](architecture/the_test_boundary.md)
   - [X] Chapter 29 - [Clean Embedded Architecture](architecture/clean_embedded_architecture.md)
 
