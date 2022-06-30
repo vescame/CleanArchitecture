@@ -39,7 +39,7 @@
 - [ ] Part VI - Details
   - [ ] Chapter 30 - The Database is a Detail
   - [ ] Chapter 31 - The Web is a Detail
-  - [ ] Chapter 32 - Frameworks are Details
+  - [X] Chapter 32 - [Frameworks are Details](details/frameworks_are_details.md)
   - [ ] Chapter 33 - Case Study: Video Sales
   - [ ] Chapter 34 - The Missing Chapter
 
