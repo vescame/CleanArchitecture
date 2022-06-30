@@ -36,4 +36,10 @@
   - [X] Chapter 27 - [Services: Great and Small](architecture/services_great_and_small.md)
   - [X] Chapter 28 - [The Test Boundary](architecture/the_test_boundary.md)
   - [X] Chapter 29 - [Clean Embedded Architecture](architecture/clean_embedded_architecture.md)
+- [ ] Part VI - Details
+  - [ ] Chapter 30 - The Database is a Detail
+  - [ ] Chapter 31 - The Web is a Detail
+  - [ ] Chapter 32 - Frameworks are Details
+  - [ ] Chapter 33 - Case Study: Video Sales
+  - [ ] Chapter 34 - The Missing Chapter
 
