@@ -38,7 +38,7 @@
   - [X] Chapter 29 - [Clean Embedded Architecture](architecture/clean_embedded_architecture.md)
 - [ ] Part VI - Details
   - [X] Chapter 30 - [The Database is a Detail](details/the_database_is_a_detail.md)
-  - [ ] Chapter 31 - The Web is a Detail
+  - [X] Chapter 31 - [The Web is a Detail](details/the_web_is_a_detail.md)
   - [ ] Chapter 32 - Frameworks are Details
   - [ ] Chapter 33 - Case Study: Video Sales
   - [ ] Chapter 34 - The Missing Chapter
