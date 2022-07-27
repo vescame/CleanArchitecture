@@ -35,6 +35,7 @@ subprojects {
         // all modules test framework
         testImplementation(Dependency.kotestCore)
         testImplementation(Dependency.kotestJunit5)
+        testImplementation(Dependency.mockk)
     }
 
     tasks.withType<KotlinCompile> {
