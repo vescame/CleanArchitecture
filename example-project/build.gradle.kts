@@ -29,8 +29,13 @@ subprojects {
     }
 
     dependencies {
-        implementation("org.jetbrains.kotlin:kotlin-reflect:1.7.10")
-        implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.7.10")
+        // kotlin core
+        implementation(Dependency.kotlinReflect)
+        implementation(Dependency.kotlinStdlibJdk8)
+
+        // kotlinx coroutines core
+        implementation(Dependency.kotlinxCoroutinesCore)
+        runtimeOnly(Dependency.kotlinxCoroutinesJvm)
 
         // all modules test framework
         testImplementation(Dependency.kotestCore)

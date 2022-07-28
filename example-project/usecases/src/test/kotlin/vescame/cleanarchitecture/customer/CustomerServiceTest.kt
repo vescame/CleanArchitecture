@@ -9,6 +9,7 @@ import io.kotest.core.spec.style.ShouldSpec
 import io.mockk.mockk
 import io.mockk.every
 import io.mockk.verify
+import io.mockk.coEvery
 import io.mockk.coVerifyOrder
 import java.time.LocalDate
 import java.math.BigDecimal
@@ -28,7 +29,7 @@ internal class CustomerServiceTest : ShouldSpec({
             salary = BigDecimal(2000.5)
         )
 
-        every {
+        coEvery {
             source.getUserById(1)
         } returns CustomerResponse(
             id = "1",

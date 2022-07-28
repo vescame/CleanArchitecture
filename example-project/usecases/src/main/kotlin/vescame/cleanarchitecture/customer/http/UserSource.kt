@@ -4,5 +4,5 @@ import vescame.cleanarchitecture.customer.dto.CustomerResponse
 
 interface UserSource {
 
-    fun getUserById(id: Long): CustomerResponse
+    suspend fun getUserById(id: Long): CustomerResponse
 }

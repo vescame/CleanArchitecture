@@ -9,7 +9,7 @@ class StubExternalUserSource(
     private val adapter: CommonAdapter<ExternalUser, CustomerResponse>
 ) : UserSource {
 
-    override fun getUserById(id: Long) = adapter.toAdapted(externalUser)
+    override suspend fun getUserById(id: Long) = adapter.toAdapted(externalUser)
 
     private companion object {
         val externalUser = ExternalUser(

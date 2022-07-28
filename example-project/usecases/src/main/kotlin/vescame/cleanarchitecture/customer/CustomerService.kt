@@ -10,6 +10,6 @@ class CustomerService(
     private val adapter: CommonAdapter<CustomerResponse, Customer>
 ) {
 
-    fun getCustomer(customerId: String): Customer =
+    suspend fun getCustomer(customerId: String): Customer =
         adapter.toAdapted(source.getUserById(customerId.toLong()))
 }
