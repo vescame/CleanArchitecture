@@ -1,0 +1,3 @@
+package vescame.cleanarchitecture.customer.repository
+
+internal class CustomerRepositoryTest

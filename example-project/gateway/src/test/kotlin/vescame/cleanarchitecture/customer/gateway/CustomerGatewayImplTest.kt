@@ -1,0 +1,3 @@
+package vescame.cleanarchitecture.customer.gateway
+
+internal class CustomerGatewayImplTest

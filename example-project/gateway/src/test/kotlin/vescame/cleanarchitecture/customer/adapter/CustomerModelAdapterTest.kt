@@ -1,0 +1,3 @@
+package vescame.cleanarchitecture.customer.adapter
+
+internal class CustomerModelAdapterTest
