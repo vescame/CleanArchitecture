@@ -10,4 +10,5 @@ dependencies {
     implementation(project(":entities"))
     implementation(project(":usecases"))
     implementation(project(":integration"))
+    implementation(project(":gateway"))
 }
