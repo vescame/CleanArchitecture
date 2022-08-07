@@ -1,16 +1,15 @@
 package vescame.cleanarchitecture.customer
 
 import vescame.cleanarchitecture.common.CommonAdapter
-import vescame.cleanarchitecture.customer.CustomerService
 import vescame.cleanarchitecture.customer.http.UserSource
 import vescame.cleanarchitecture.customer.dto.CustomerResponse
-import io.kotest.matchers.shouldBe
 import io.kotest.core.spec.style.ShouldSpec
 import io.mockk.mockk
 import io.mockk.every
-import io.mockk.verify
 import io.mockk.coEvery
 import io.mockk.coVerifyOrder
+import vescame.cleanarchitecture.customer.gateway.CustomerGateway
+import vescame.cleanarchitecture.customer.gateway.model.CustomerModel
 import java.time.LocalDate
 import java.math.BigDecimal
 
@@ -18,11 +17,14 @@ internal class CustomerServiceTest : ShouldSpec({
 
     val source = mockk<UserSource>()
     val adapter = mockk<CommonAdapter<CustomerResponse, Customer>>()
-    val service = CustomerService(source, adapter) 
+    val gatewayAdapter = mockk<CommonAdapter<Customer, CustomerModel>>()
+    val gateway = mockk<CustomerGateway>()
+    val service = CustomerService(source, adapter, gatewayAdapter, gateway)
 
     should("orchestrate customer integration fetch and response adapt") {
         val adapted = Customer(
             id = 1,
+            externalId = 1,
             name = "user",
             surname = "surname",
             birthDate = LocalDate.of(1970, 1, 1),
