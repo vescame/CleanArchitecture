@@ -1,3 +1,7 @@
 package vescame.cleanarchitecture.audit.strategy
 
-internal class SaveAuditStrategyTest
+import io.kotest.core.spec.style.ShouldSpec
+
+internal class SaveAuditStrategyTest : ShouldSpec({
+
+})

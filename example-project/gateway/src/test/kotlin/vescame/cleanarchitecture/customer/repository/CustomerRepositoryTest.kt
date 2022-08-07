@@ -1,3 +1,7 @@
 package vescame.cleanarchitecture.customer.repository
 
-internal class CustomerRepositoryTest
+import io.kotest.core.spec.style.ShouldSpec
+
+internal class CustomerRepositoryTest : ShouldSpec({
+
+})

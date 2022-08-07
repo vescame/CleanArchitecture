@@ -22,12 +22,12 @@ class CustomerRepository(
     suspend fun update(customerEntity: CustomerEntity) {
         val customer = getById(customerEntity.id!!) ?: throw NoSuchElementException("cannot update customer $customerEntity")
         val index = CUSTOMER_REPOSITORY.indexOf(customer)
-        CUSTOMER_REPOSITORY[index] = auditStrategy.update(customerEntity)
+        CUSTOMER_REPOSITORY[index] = auditStrategy.update(customer, customerEntity)
     }
 
     suspend fun delete(id: Long) {
         val customer = getById(id) ?: throw NoSuchElementException("cannot delete customer $id. id is invalid.")
-        update(auditStrategy.delete(customer))
+        update(auditStrategy.softDelete(customer))
     }
 
     private fun CustomerEntity.withNextId() = copy(id = latestId() + 1)

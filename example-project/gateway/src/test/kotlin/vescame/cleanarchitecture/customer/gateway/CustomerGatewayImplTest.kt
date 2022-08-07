@@ -1,3 +1,7 @@
 package vescame.cleanarchitecture.customer.gateway
 
-internal class CustomerGatewayImplTest
+import io.kotest.core.spec.style.ShouldSpec
+
+internal class CustomerGatewayImplTest : ShouldSpec({
+
+})

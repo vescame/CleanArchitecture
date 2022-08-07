@@ -1,39 +1,34 @@
 package vescame.cleanarchitecture.customer.gateway
 
-import vescame.cleanarchitecture.customer.gateway.adapter.CustomerEntityAdapter
-import vescame.cleanarchitecture.customer.gateway.adapter.CustomerModelAdapter
+import vescame.cleanarchitecture.customer.domain.CustomerEntity
+import vescame.cleanarchitecture.customer.gateway.adapter.GatewayCustomerEntityAdapter
+import vescame.cleanarchitecture.customer.gateway.adapter.GatewayCustomerModelAdapter
 import vescame.cleanarchitecture.customer.gateway.model.CustomerModel
 import vescame.cleanarchitecture.customer.repository.CustomerRepository
 
 class CustomerGatewayImpl(
     private val customerRepository: CustomerRepository,
-    private val customerModelAdapter: CustomerModelAdapter,
-    private val customerEntityAdapter: CustomerEntityAdapter
+    private val gatewayCustomerModelAdapter: GatewayCustomerModelAdapter,
+    private val gatewayCustomerEntityAdapter: GatewayCustomerEntityAdapter
 ) : CustomerGateway {
 
-    override suspend fun findAll() = customerRepository.findAll().map {
-        println(it)
-        customerModelAdapter.toAdapted(it)!!
-    }
+    override suspend fun findAll() = customerRepository.findAll().mapToModel()
 
     override suspend fun getById(id: Long): CustomerModel? {
         val customer = customerRepository.getById(id)
         return if (customer != null) {
-            customerModelAdapter.toAdapted(customer)
+            gatewayCustomerModelAdapter.toAdapted(customer)
         } else null
     }
 
     override suspend fun save(customerModel: CustomerModel) {
-        with(customerEntityAdapter.toAdapted(customerModel)) {
+        with(gatewayCustomerEntityAdapter.toAdapted(customerModel)) {
             if (id != null) {
-                if (getById(id) != null) {
-                    println("updating $customerModel")
-                    customerRepository.update(this)
-                } else {
-                    throw IllegalArgumentException("update of customer $id cannot be completed, it's not yet persisted")
+                when (val oldCustomer = getById(id)) {
+                    null -> throw IllegalArgumentException("update of customer $id cannot be completed, it's not yet persisted")
+                    else -> customerRepository.update(this)
                 }
             } else {
-                println("saving $customerModel")
                 customerRepository.save(this)
             }
         }
@@ -42,4 +37,6 @@ class CustomerGatewayImpl(
     override suspend fun deleteById(id: Long) {
         customerRepository.delete(id)
     }
+
+    private fun List<CustomerEntity>.mapToModel() = map { gatewayCustomerModelAdapter.toAdapted(it)!! }
 }

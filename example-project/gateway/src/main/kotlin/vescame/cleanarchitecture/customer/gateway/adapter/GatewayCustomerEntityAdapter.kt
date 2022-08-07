@@ -4,7 +4,7 @@ import vescame.cleanarchitecture.common.CommonAdapter
 import vescame.cleanarchitecture.customer.domain.CustomerEntity
 import vescame.cleanarchitecture.customer.gateway.model.CustomerModel
 
-class CustomerEntityAdapter : CommonAdapter<CustomerModel, CustomerEntity> {
+class GatewayCustomerEntityAdapter : CommonAdapter<CustomerModel, CustomerEntity> {
 
     override fun toAdapted(input: CustomerModel) = CustomerEntity(
         id = input.id,
