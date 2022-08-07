@@ -1,32 +1,24 @@
 package vescame.cleanarchitecture.customer.gateway
 
 import vescame.cleanarchitecture.customer.domain.CustomerEntity
-import vescame.cleanarchitecture.customer.gateway.adapter.GatewayCustomerEntityAdapter
-import vescame.cleanarchitecture.customer.gateway.adapter.GatewayCustomerModelAdapter
 import vescame.cleanarchitecture.customer.gateway.model.CustomerModel
 import vescame.cleanarchitecture.customer.repository.CustomerRepository
 
 class CustomerGatewayImpl(
-    private val customerRepository: CustomerRepository,
-    private val gatewayCustomerModelAdapter: GatewayCustomerModelAdapter,
-    private val gatewayCustomerEntityAdapter: GatewayCustomerEntityAdapter
+    private val customerRepository: CustomerRepository
 ) : CustomerGateway {
 
     override suspend fun findAll() = customerRepository.findAll().mapToModel()
 
-    override suspend fun getById(id: Long): CustomerModel? {
-        val customer = customerRepository.getById(id)
-        return if (customer != null) {
-            gatewayCustomerModelAdapter.toAdapted(customer)
-        } else null
-    }
+    override suspend fun getById(id: Long) = customerRepository.getById(id)?.toModel()
 
     override suspend fun save(customerModel: CustomerModel) {
-        with(gatewayCustomerEntityAdapter.toAdapted(customerModel)) {
+        with(customerModel.toEntity()) {
             if (id != null) {
-                when (val oldCustomer = getById(id)) {
-                    null -> throw IllegalArgumentException("update of customer $id cannot be completed, it's not yet persisted")
-                    else -> customerRepository.update(this)
+                if (getById(id) != null) {
+                    customerRepository.update(this)
+                } else {
+                    throw IllegalArgumentException("update of customer $id cannot be completed, it's not yet persisted")
                 }
             } else {
                 customerRepository.save(this)
@@ -38,5 +30,28 @@ class CustomerGatewayImpl(
         customerRepository.delete(id)
     }
 
-    private fun List<CustomerEntity>.mapToModel() = map { gatewayCustomerModelAdapter.toAdapted(it)!! }
+    private fun List<CustomerEntity>.mapToModel() = map { it.toModel()!! }
+
+    private fun CustomerModel.toEntity() = CustomerEntity(
+        id = id,
+        externalId = externalId,
+        name = name,
+        surname = surname,
+        birthDate = birthDate,
+        salary = salary,
+        status = null,
+        createDate = null,
+        updateDate = null
+    )
+
+    private fun CustomerEntity?.toModel() = this?.let {
+        CustomerModel(
+            id = it.id,
+            externalId = it.externalId,
+            name = it.name,
+            surname = it.surname,
+            birthDate = it.birthDate,
+            salary = it.salary
+        )
+    }
 }

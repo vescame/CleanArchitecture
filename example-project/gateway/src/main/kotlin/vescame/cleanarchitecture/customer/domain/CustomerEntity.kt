@@ -8,6 +8,7 @@ import java.time.LocalDateTime
 
 data class CustomerEntity(
     val id: Long?,
+    val externalId: Long,
     val name: String,
     val surname: String,
     val birthDate: LocalDate,
