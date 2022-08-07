@@ -2,7 +2,6 @@ package vescame.cleanarchitecture.customer.adapter
 
 import vescame.cleanarchitecture.customer.dto.CustomerResponse
 import vescame.cleanarchitecture.customer.ExternalUser
-import vescame.cleanarchitecture.customer.adapter.ExternalUserAdapter
 import io.kotest.core.spec.style.ShouldSpec
 import io.kotest.matchers.shouldBe
 import java.time.LocalDate
