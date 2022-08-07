@@ -1,4 +1,4 @@
-package vescame.cleanarchitecture.misc.scaler
+package vescame.cleanarchitecture.common
 
 import java.math.RoundingMode
 

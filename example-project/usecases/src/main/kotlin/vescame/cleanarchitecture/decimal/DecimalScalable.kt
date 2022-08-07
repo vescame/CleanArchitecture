@@ -1,8 +1,8 @@
-package vescame.cleanarchitecture.common
+package vescame.cleanarchitecture.decimal
 
 import java.math.RoundingMode
 
-interface DecimalPropertyScaler {
+interface DecimalScalable {
 
     val scale: Int
     val roundingMode: RoundingMode
