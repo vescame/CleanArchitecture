@@ -5,16 +5,16 @@ import io.kotest.matchers.shouldBe
 import io.mockk.every
 import io.mockk.mockk
 import vescame.cleanarchitecture.customer.dto.CustomerResponse
-import vescame.cleanarchitecture.misc.scaler.DefaultScale.ROUNDING_MODE
-import vescame.cleanarchitecture.misc.scaler.DefaultScale.SCALE
-import vescame.cleanarchitecture.misc.scaler.SalaryScaler
+import vescame.cleanarchitecture.common.DefaultScale.ROUNDING_MODE
+import vescame.cleanarchitecture.common.DefaultScale.SCALE
+import vescame.cleanarchitecture.decimal.DecimalScaler
 import java.math.BigDecimal
 import java.time.LocalDate
 
 internal class CustomerAdapterTest : ShouldSpec({
-    val salaryScaler = mockk<SalaryScaler>()
-    val adapter = CustomerAdapter(
-        salaryScaler = salaryScaler
+    val decimalScaler = mockk<DecimalScaler>()
+    val adapter = CustomerEntityAdapter(
+        decimalScalable = decimalScaler
     )
 
     should("map response dto to entity") {
@@ -27,11 +27,12 @@ internal class CustomerAdapterTest : ShouldSpec({
 
         val expectedSalary = response.salary.setScale(SCALE, ROUNDING_MODE)
 
-        every { salaryScaler.scaled(any()) } returns expectedSalary
+        every { decimalScaler.scaled(any()) } returns expectedSalary
 
         val adapted = adapter.toAdapted(response)
 
-        adapted.id shouldBe 1234
+        adapted.id shouldBe null
+        adapted.externalId shouldBe 1234
         adapted.name shouldBe "any"
         adapted.surname shouldBe "name"
         adapted.birthDate shouldBe LocalDate.of(2022, 1, 1)
