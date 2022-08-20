@@ -4,6 +4,7 @@ não sejam influeciadas por implementações. a "inversão" em si trata-se do fl
 pois uma classe concreta referencia uma abstração que é dependência de outra já
 com as implementações (e não o contrário).
 por exemplo: *Main* -> *AService* -> *AServiceImpl*
+
 ![figure 11.1 page 90](./DIP_figure_11_1.png)
 
 ### Abstrações Estáveis
